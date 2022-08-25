@@ -1,8 +1,8 @@
 {
-  "name": "actvUi",
+  "name": "actvui",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/actvUi.js",
+  "main": "lib/actvui.js",
   "style": "lib/index.css",
   "files": [
     "lib",

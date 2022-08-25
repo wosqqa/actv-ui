@@ -4,11 +4,11 @@
 
 ```bash
 # 通过 npm
-npm i actvUi
+npm i actvui
 
 # 通过 yarn
-yarn add actvUi
+yarn add actvui
 
 # 通过 pnpm
-pnpm add actvUi
+pnpm add actvui
 ```

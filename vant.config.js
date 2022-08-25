@@ -1,15 +1,15 @@
 module.exports = {
-  name: 'actvUi',
+  name: 'actvui',
   build: {
     css: {
-      preprocessor: 'less',
+      preprocessor: 'sass',
     },
     site: {
-      publicPath: '/actvUi/',
+      publicPath: '/actvui/',
     },
   },
   site: {
-    title: 'actvUi',
+    title: 'actvui',
     logo: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png',
     nav: [
       {
@@ -31,6 +31,10 @@ module.exports = {
           {
             path: 'demo-button',
             title: 'DemoButton 按钮',
+          },
+          {
+            path: 'nav-header',
+            title: 'App导航',
           },
         ],
       },
