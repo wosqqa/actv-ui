@@ -34,7 +34,16 @@ module.exports = {
           },
           {
             path: 'nav-header',
-            title: 'App导航',
+            title: 'NavHeader导航',
+          },
+        ],
+      },
+      {
+        title: '业务组件',
+        items: [
+          {
+            path: 'Turntable',
+            title: 'Turntable转盘',
           },
         ],
       },
