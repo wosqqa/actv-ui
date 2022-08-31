@@ -1,16 +1,16 @@
-# DemoButton 按钮
+# Turntable 转盘
 
 ### 介绍
 
-DemoButton 是一个示例按钮组件
+Turntable 大转盘组件
 
 ### 引入
 
 ```js
 import Vue from 'vue';
-import { DemoButton } from 'actvui';
+import { Turntable } from 'actvui';
 
-Vue.use(DemoButton);
+Vue.use(Turntable);
 ```
 
 ## 代码演示
@@ -18,7 +18,23 @@ Vue.use(DemoButton);
 ### 基础用法
 
 ```html
-<demo-button type="primary" />
+<turntable type="primary" :ring="ring" :index="index" :time="time">
+        <template v-slot:boxbg
+          ><img
+            src="https://bddm.tt.cn/appfe/activities/img/waiquan.544f4667.png"
+            alt=""
+        /></template>
+        <template v-slot:disk
+          ><img
+            src="https://bddm.tt.cn/appfe/activities/img/neiquan.04930420.png"
+            alt=""
+        /></template>
+        <template v-slot:btn
+          ><img
+            src="https://bddm.tt.cn/appfe/activities/img/cs-btn.d77b00ac.png"
+            alt=""
+        /></template>
+</turntable>
 ```
 
 ## API
@@ -27,8 +43,10 @@ Vue.use(DemoButton);
 
 | 参数          | 说明     | 类型     | 默认值    |
 | ------------- | -------- | -------- | --------- |
-| type          | 按钮类型 | _string_ | `primary` |
-| color `1.0.0` | 按钮颜色 | _string_ | -         |
+| time          | 转动时间毫秒 | _string_ | `4500` |
+| giftNum          | 转盘礼物数量 | _string_ | `8` |
+| index          | 转动位置 | _string_ | `0` |
+| ring          | 转动圈数 | _string_ | `5` |
 
 ### Events
 
@@ -40,4 +58,6 @@ Vue.use(DemoButton);
 
 | 名称    | 说明     |
 | ------- | -------- |
-| default | 默认插槽 |
+| boxbg | 转盘背景插槽 |
+| disk | 转盘圆盘 |
+| btn | 转盘指针 |

@@ -1,10 +1,5 @@
 <template>
   <div class="nbox">
-    <img
-      src="https://bddm.tt.cn/appfe/activities/img/waiquan.544f4667.png"
-      class="wqbox"
-      id="wqbox"
-    />
     <div class="wqbox" id="wqbox"><slot name="boxbg"></slot></div>
     <div
       :style="`transform: rotate(${rotateTurn}deg) translateZ(0);`"
@@ -13,17 +8,9 @@
     >
       <slot name="disk"></slot>
     </div>
-    <img
-      src="https://bddm.tt.cn/appfe/activities/img/neiquan.04930420.png"
-      alt=""
-      :style="`transform: rotate(${rotateTurn}deg) translateZ(0);`"
-      :class="`${startAnmi ? 'nqbox nqboxd' : 'nqbox'}`"
-      id="nqbox"
-    />
     <div class="cjbtn" @click="startTurntable()">
       <slot name="btn"></slot>
     </div>
-    />
   </div>
 </template>
 
@@ -64,16 +51,17 @@ export default {
     startTurnAnmit() {
       const _this = this;
       let rotateTurn = 0;
-      const perNum = 360 / this.giftNum;
-      rotateTurn = this.ring * 360 + (360 - perNum * this.index - perNum / 2);
-      console.log('旋转度数', rotateTurn, perNum, this.time / 1000);
+      const perNum = 360 / _this.giftNum;
+      rotateTurn = _this.ring * 360 + (360 - perNum * _this.index - perNum / 2);
+      console.log('旋转度数', rotateTurn, perNum, _this.time / 1000);
       document.body.style.setProperty('--rotateTurn', rotateTurn);
-      document.body.style.setProperty('--rotateTime', this.time / 1000);
+      document.body.style.setProperty('--rotateTime', _this.time / 1000);
       _this.startAnmi = true;
       setTimeout(() => {
-        this.rotateTurn = rotateTurn;
+        _this.rotateTurn = rotateTurn;
+        _this.$emit('turnEnd');
         _this.startAnmi = false;
-      }, this.time);
+      }, _this.time);
     },
   },
 };

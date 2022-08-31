@@ -42,7 +42,7 @@ module.exports = {
         title: '业务组件',
         items: [
           {
-            path: 'Turntable',
+            path: 'turntable',
             title: 'Turntable转盘',
           },
         ],

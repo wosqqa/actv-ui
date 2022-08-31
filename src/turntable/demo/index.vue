@@ -1,7 +1,23 @@
 <template>
   <demo-section>
     <demo-block title="基础用法">
-      <turntable type="primary" :ring="ring" :index="index" :time="time">
+      <turntable
+        type="primary"
+        :ring="ring"
+        :index="index"
+        :time="time"
+        @turnEnd="aniEnd"
+      >
+        <template v-slot:boxbg
+          ><img
+            src="https://bddm.tt.cn/appfe/activities/img/waiquan.544f4667.png"
+            alt=""
+        /></template>
+        <template v-slot:disk
+          ><img
+            src="https://bddm.tt.cn/appfe/activities/img/neiquan.04930420.png"
+            alt=""
+        /></template>
         <template v-slot:btn
           ><img
             src="https://bddm.tt.cn/appfe/activities/img/cs-btn.d77b00ac.png"
@@ -24,20 +40,15 @@ export default {
     };
   },
   methods: {
-    startTurntable() {
-      this.startTurnAnmit();
-    },
-    startTurnAnmit(type) {
-      const _this = this;
-      let rotateTurn = 0;
-      rotateTurn = this.ring * 360 + 157.5;
-      document.body.style.setProperty('--rotateTurn', rotateTurn);
-      document.body.style.setProperty('--rotateTime', rotateTurn);
-      _this.startAnmi = true;
-      setTimeout(() => {
-        // _this.startAnmi = false;
-      }, 4500);
+    aniEnd() {
+      console.log('转动完处理');
     },
   },
 };
 </script>
+<style lang="scss">
+img {
+  width: 100%;
+  height: 100%;
+}
+</style>
