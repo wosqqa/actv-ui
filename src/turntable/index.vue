@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'turntable',
+  name: 'act-turntable',
   props: {
     time: {
       type: Number,

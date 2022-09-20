@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: 'nav-header',
+  name: 'act-header',
   props: {
     color: {
       type: String,

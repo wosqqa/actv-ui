@@ -18,7 +18,7 @@ Vue.use(Turntable);
 ### 基础用法
 
 ```html
-<turntable type="primary" :ring="ring" :index="index" :time="time">
+<act-turntable type="primary" :ring="ring" :index="index" :time="time">
         <template v-slot:boxbg
           ><img
             src="https://bddm.tt.cn/appfe/activities/img/waiquan.544f4667.png"
@@ -34,7 +34,7 @@ Vue.use(Turntable);
             src="https://bddm.tt.cn/appfe/activities/img/cs-btn.d77b00ac.png"
             alt=""
         /></template>
-</turntable>
+</act-turntable>
 ```
 
 ## API

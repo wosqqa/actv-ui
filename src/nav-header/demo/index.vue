@@ -2,20 +2,20 @@
   <demo-section style="background: #afddff">
     <demo-block title="默认用法">
       <div style="position: relative; height: 1.5rem">
-        <nav-header title="默认透明" @back="goBack"> </nav-header>
+        <act-header title="默认透明" @back="goBack"> </act-header>
       </div>
       <div style="position: relative; height: 1.5rem">
-        <nav-header
+        <act-header
           type="2"
           nav-bg="#B4EA9B"
           title="背景颜色"
           bar-bg="#9eb8ec"
           @back="goBack"
         >
-        </nav-header>
+        </act-header>
       </div>
       <div style="position: relative; height: 1.5rem">
-        <nav-header
+        <act-header
           type="2"
           nav-bg="#ffffff"
           title="字体颜色"
@@ -23,10 +23,10 @@
           color="#222222"
           @back="goBack"
         >
-        </nav-header>
+        </act-header>
       </div>
       <div style="position: relative; height: 1.5rem">
-        <nav-header
+        <act-header
           type="3"
           nav-bg="#ffffff"
           title="字体颜色"
@@ -34,10 +34,10 @@
           color="#222222"
           @back="goBack"
         >
-        </nav-header>
+        </act-header>
       </div>
       <div style="position: relative; height: 1.5rem">
-        <nav-header type="4">
+        <act-header type="4">
           <img
             class="left"
             src="https://bddm.tt.cn/appfe/activities/images/actvui/backb.png"
@@ -46,7 +46,7 @@
           />
           <div class="title">自定义标题</div>
           <div class="right">规则</div>
-        </nav-header>
+        </act-header>
       </div>
     </demo-block>
   </demo-section>

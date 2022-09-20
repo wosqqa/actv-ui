@@ -33,8 +33,8 @@ module.exports = {
             title: 'DemoButton 按钮',
           },
           {
-            path: 'nav-header',
-            title: 'NavHeader导航',
+            path: 'header',
+            title: 'header导航',
           },
         ],
       },
@@ -43,7 +43,11 @@ module.exports = {
         items: [
           {
             path: 'turntable',
-            title: 'Turntable转盘',
+            title: 'turntable大转盘',
+          },
+          {
+            path: 'barrage',
+            title: 'barrage弹幕',
           },
         ],
       },

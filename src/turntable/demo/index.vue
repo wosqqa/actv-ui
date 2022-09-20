@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block title="基础用法">
-      <turntable
+      <act-turntable
         type="primary"
         :ring="ring"
         :index="index"
@@ -23,14 +23,14 @@
             src="https://bddm.tt.cn/appfe/activities/img/cs-btn.d77b00ac.png"
             alt=""
         /></template>
-      </turntable>
+      </act-turntable>
     </demo-block>
   </demo-section>
 </template>
 
 <script>
 export default {
-  name: 'turntable-demo',
+  name: 'act-turntable-demo',
   data() {
     return {
       giftNum: 8,

@@ -18,14 +18,14 @@ Vue.use(NavHeader);
 ### 基础用法
 
 ```html
- <nav-header title="默认透明" @back="goBack"></nav-header>
+ <act-header title="默认透明" @back="goBack"></act-header>
 
-<nav-header type="2" nav-bg="#B4EA9B" title="背景颜色"
- bar-bg="#9eb8ec" @back="goBack" > </nav-header>
+<act-header type="2" nav-bg="#B4EA9B" title="背景颜色"
+ bar-bg="#9eb8ec" @back="goBack" > </act-header>
 
-<nav-header type="2" nav-bg="#ffffff" title="字体颜色"
+<act-header type="2" nav-bg="#ffffff" title="字体颜色"
   bar-bg="#e1e1e1"  color="#222222"  @back="goBack">
-</nav-header>
+</act-header>
 ```
 
 ## API
