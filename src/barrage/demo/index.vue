@@ -20,11 +20,7 @@
             v-for="(item, index) in txtArr"
             :key="'sll' + index"
           >
-            <img
-              src="https://bddm.tt.cn/appfe/achievement/static_image/login_user_default.png"
-              alt=""
-              srcset=""
-            />
+            <img :src="userImg" alt="" srcset="" />
             {{ item }}
           </div>
         </act-barrage>
@@ -37,6 +33,7 @@ export default {
   name: 'act-barrage-demo',
   data() {
     return {
+      userImg: 'default.png',
       txtArr: [
         '芳心纵火犯刚刚领到了白银礼包，额外获得200金币',
         '额外获得200金币',
@@ -58,7 +55,6 @@ export default {
 </script>
 <style lang="scss">
 .ab {
-  position: relative;
   .btxt {
     position: absolute;
     top: 0;

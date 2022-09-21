@@ -39,6 +39,19 @@ module.exports = {
         ],
       },
       {
+        title: '功能组件',
+        items: [
+          {
+            path: 'countdown',
+            title: 'countdown 倒计时',
+          },
+          {
+            path: 'log',
+            title: 'app日志上报',
+          },
+        ],
+      },
+      {
         title: '业务组件',
         items: [
           {
