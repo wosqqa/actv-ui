@@ -49,6 +49,7 @@ export default {
 .btxt {
   width: max-content;
   padding: 0 0.1rem;
+  margin-left: 0.5rem;
   background: rgba(111, 166, 240, 0.4);
   border-radius: 0.26rem;
   font-size: 0.24rem;
@@ -60,6 +61,7 @@ export default {
 .btxt2 {
   width: max-content;
   padding: 0.1rem 0.3rem;
+  margin-left: 0.5rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;

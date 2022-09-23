@@ -62,6 +62,14 @@ module.exports = {
             path: 'barrage',
             title: 'barrage弹幕',
           },
+          {
+            path: 'playbill',
+            title: 'playbill海报',
+          },
+          {
+            path: 'playsvga',
+            title: 'playsvga动画',
+          },
         ],
       },
     ],

@@ -14,13 +14,13 @@
       </div> </demo-block
     ><demo-block title="自定义用法">
       <div class="ab">
-        <act-barrage :speeds="4000" :list="txtArr">
+        <act-barrage :speeds="6000" :list="txtArr">
           <div
             class="btxt2"
             v-for="(item, index) in txtArr"
             :key="'sll' + index"
           >
-            <img :src="userImg" alt="" srcset="" />
+            <img src="img/default.png" alt="" srcset="" />
             {{ item }}
           </div>
         </act-barrage>
@@ -55,6 +55,9 @@ export default {
 </script>
 <style lang="scss">
 .ab {
+  position: relative;
+  width: 7.5rem;
+  height: 1rem;
   .btxt {
     position: absolute;
     top: 0;
