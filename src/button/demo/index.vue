@@ -15,3 +15,11 @@ import DemoButton from '../index.vue';
 
 const txt = '我是测试的';
 </script>
+<style lang="scss">
+.act-button {
+  width: 2.9rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-radius: 0.5rem;
+}
+</style>
