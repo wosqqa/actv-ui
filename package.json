@@ -1,7 +1,7 @@
 {
   "name": "actv-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "actv-ui基于vue3的移动端活动组件库",
   "main": "lib/actv-ui.js",
   "module": "es/index.js",
   "style": "lib/index.css",
@@ -21,7 +21,7 @@
     "test:watch": "vant-cli test --watch",
     "test:coverage": "open test/coverage/index.html"
   },
-  "author": "",
+  "author": "czw",
   "nano-staged": {
     "*.md": "prettier --write",
     "*.{ts,tsx,js,vue,less,scss}": "prettier --write",
