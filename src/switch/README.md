@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { Switch } from 'actv-ui';
+import { Switch } from 'actv-ui/lib/index.js';
 
 Vue.use(Switch);
 ```

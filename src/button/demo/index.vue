@@ -9,6 +9,7 @@
 </template>
 
 <script setup>
+import ActButton from '../index.vue';
 const txt = '我是测试的';
 </script>
 <style lang="scss">
