@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'switch',
+  name: 'Switch',
   props: {
     color: String,
     type: {
@@ -25,7 +25,6 @@ export default {
   line-height: 36px;
   background-color: #f44;
   border: none;
-  background-image: url('../../assets/head.png');
   border-radius: 30px;
 }
 </style>

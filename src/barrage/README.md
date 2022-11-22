@@ -1,16 +1,16 @@
-# Button 按钮
+# Switch 开关
 
 ### 介绍
 
-Button 按钮用于触发一个操作，如提交表单、跳转、接口请求等。
+用于在打开和关闭状态之间进行切换。
 
 ### 引入
 
 ```js
 import Vue from 'vue';
-import { Button } from 'actv-ui';
+import { Switch } from 'actv-ui/lib/index.js';
 
-Vue.use(Button);
+Vue.use(Switch);
 ```
 
 ## 代码演示
@@ -18,8 +18,7 @@ Vue.use(Button);
 ### 基础用法
 
 ```html
-<act-button type="primary" />
-<act-button color="#ffa6b6" loading="5000" @click="getChildClick">节流按钮</act-button>
+<act-switch type="primary" />
 ```
 
 ## API
@@ -29,8 +28,7 @@ Vue.use(Button);
 | 参数          | 说明     | 类型     | 默认值    |
 | ------------- | -------- | -------- | --------- |
 | type          | 按钮类型 | _string_ | `primary` |
-| color  | 按钮颜色 | _string_ | -         |
-| loading  | 节流时间 | _number_ | -    `500`     |
+| color `1.0.0` | 按钮颜色 | _string_ | -         |
 
 ### Events
 
