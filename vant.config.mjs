@@ -26,7 +26,33 @@ export default {
         ],
       },
       {
+        title: '布局UI',
+        items: [
+          {
+            path: 'button',
+            title: 'Button 按钮',
+          },
+          {
+            path: 'switch',
+            title: 'Switch 开关',
+          },
+        ],
+      },
+      {
         title: '基础组件',
+        items: [
+          {
+            path: 'button',
+            title: 'Button 按钮',
+          },
+          {
+            path: 'switch',
+            title: 'Switch 开关',
+          },
+        ],
+      },
+      {
+        title: '功能组件',
         items: [
           {
             path: 'button',

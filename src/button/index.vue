@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="{ 'act-button': true }"
+    :class="{ 'act-button': true, 'act-button-and': breathing }"
     :style="`background:${color}`"
     @click="toClick"
   >
@@ -23,6 +23,10 @@ const props = defineProps({
   loading: {
     type: Number,
     default: 500,
+  },
+  breathing: {
+    type: Boolean,
+    default: false,
   },
 });
 const toClick = () => {
@@ -48,5 +52,19 @@ const toClick = () => {
   color: #0b1355;
   line-height: 0.98rem;
   text-align: center;
+}
+.act-button-and {
+  animation: actBtnAn 1.5s infinite linear;
+  @keyframes actBtnAn {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }
 </style>

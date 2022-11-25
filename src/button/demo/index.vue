@@ -10,6 +10,7 @@
       color="linear-gradient(90deg, #ffa6b6 0%, #fed2bb 100%)"
       style="margin-left: 15px"
       loading="5000"
+      breathing="true"
       @click="getChildClick"
       >{{ txt }}</act-button
     >
