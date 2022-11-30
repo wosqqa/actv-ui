@@ -1,6 +1,7 @@
 <template>
   <div
     :class="{ 'act-button': true, 'act-button-and': breathing }"
+    :style="`background:${color}`"
     @click="toClick"
   >
     <slot />
@@ -15,6 +16,10 @@ const props = defineProps({
     type: String,
     default: 'a',
   },
+  color: {
+    type: String,
+    default: '#fff',
+  },
   loading: {
     type: Number,
     default: 500,
@@ -24,7 +29,6 @@ const props = defineProps({
     default: false,
   },
 });
-console.log('按钮', props.loading);
 const toClick = () => {
   if (isClick) {
     isClick = false;

@@ -7,15 +7,13 @@
 
   <demo-block title="自定义颜色">
     <act-button
-      style="
-        margin-left: 15px;
-        background: linear-gradient(90deg, #ffa6b6 0%, #fed2bb 100%);
-      "
+      color="linear-gradient(90deg, #ffa6b6 0%, #fed2bb 100%)"
+      style="margin-left: 15px"
       loading="5000"
       breathing="true"
       @click="getChildClick"
       >{{ txt }}</act-button
-    ><act-button loading="1000" class="btn1">{{ txt }}</act-button>
+    >
   </demo-block>
 </template>
 
@@ -58,12 +56,5 @@ const getChildClick = (e) => {
   height: 0.8rem;
   line-height: 0.8rem;
   border-radius: 0.5rem;
-  border: 1px solid rgb(76, 143, 243);
-}
-.btn1 {
-  margin-left: 15px;
-  margin-top: 15px;
-  border-radius: 0.15rem;
-  border: 1px solid red;
 }
 </style>

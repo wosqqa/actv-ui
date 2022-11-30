@@ -29,8 +29,8 @@ Vue.use(Button);
 | 参数          | 说明     | 类型     | 默认值    |
 | ------------- | -------- | -------- | --------- |
 | type          | 按钮类型 | _string_ | `primary` |
+| color  | 按钮颜色 | _string_ | -         |
 | loading  | 节流时间 | _number_ | -    `500`     |
-| breathing  | 是否互相动效 | _boolean_ | -    `false`     |
 
 ### Events
 
