@@ -1,8 +1,7 @@
 <template>
   <demo-block title="基础用法">
-    <act-button type="primary" style="margin-left: 15px" @click="getChildClick"
-      >按钮</act-button
-    >
+    <btn1>哈哈哈</btn1>
+    <img src="../../assets/head.png" alt="" srcset="">
   </demo-block>
 
   <demo-block title="自定义颜色">
@@ -15,12 +14,14 @@
       breathing="true"
       @click="getChildClick"
       >{{ txt }}</act-button
-    ><act-button loading="1000" class="btn1">{{ txt }}</act-button>
+    >
+    <act-button loading="1000" class="btn1">{{ txt }}</act-button>
   </demo-block>
 </template>
 
 <script setup>
 import ActButton from '../index.vue';
+import btn1 from './btn1.vue';
 
 !(function (doc, win) {
   const docEl = doc.documentElement;
