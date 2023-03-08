@@ -10,8 +10,8 @@
         margin-left: 15px;
         background: linear-gradient(90deg, #ffa6b6 0%, #fed2bb 100%);
       "
-      loading="5000"
-      breathing="true"
+      :loading="5000"
+      :breathing="true"
       @click="getChildClick"
       >{{ txt }}</act-button
     >
