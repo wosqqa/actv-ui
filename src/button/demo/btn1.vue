@@ -15,7 +15,7 @@
   width: 5.49rem;
   height: 1.2rem;
   margin: 1rem auto;
-  background-image: url("../../assets/xqbtn.png");
+  background-image: url("https://wosqqa.github.io/actv-ui/img/xqbtn.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
       display: inline-block;
       width: 0.47rem;
       height: 0.45rem;
-      background-image: url("../../assets/dh.png");
+      background-image: url("https://wosqqa.github.io/actv-ui/img/dh.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -58,7 +58,7 @@
         display: inline-block;
         width: 0.28rem;
         height: 0.28rem;
-        background-image: url("../../assets/icon-pic.png");
+        background-image: url("https://wosqqa.github.io/actv-ui/img/icon-pic.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -82,7 +82,7 @@
     transform: translateX(-50%);
     width: 2.72rem;
     height: 0.65rem;
-    background-image: url("../../assets/tipss.png");
+    background-image: url("https://wosqqa.github.io/actv-ui/img/tipss.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

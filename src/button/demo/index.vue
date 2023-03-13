@@ -1,7 +1,8 @@
 <template>
   <demo-block title="基础用法">
     <btn1>哈哈哈</btn1>
-    <img src="../../assets/head.png" alt="" srcset="">
+    <img src="https://wosqqa.github.io/actv-ui/img/head.png" alt="" srcset="">
+    <img src="https://wosqqa.github.io/actv-ui/img/xqbtn.png" alt="" srcset="">
   </demo-block>
 
   <demo-block title="自定义颜色">
